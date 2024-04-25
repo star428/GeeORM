@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	db, _ := sql.Open("sqlite3", "gee.db")
+	db, _ := sql.Open("sqlite3", "../database/gee.db")
 
 	defer func() {
 		_ = db.Close()
